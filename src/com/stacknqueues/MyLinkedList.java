@@ -29,6 +29,18 @@ public class MyLinkedList {
 		return temp;
 	}
 
+	public void appendNode(INode newNode) {
+		if (head == null) {
+			this.head = newNode;
+		}
+		if (tail == null) {
+			this.tail = newNode;
+		} else {
+			this.tail.setNext(newNode);
+			this.tail = newNode;
+		}
+	}
+
 	public void printNodes() {
 		System.out.print("My Nodes ");
 		INode tempNode = head;
