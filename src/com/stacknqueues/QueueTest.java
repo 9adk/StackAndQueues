@@ -21,4 +21,21 @@ class QueueTest {
 		queue.printQueue();
 	}
 
+	/**
+	 * Usecase4
+	 */
+	@Test
+	public void givenMethodShouldRemoveFromQueue() {
+		MyQueue queue = new MyQueue();
+		MyNode<Integer> myFirstNode = new MyNode(56);
+		MyNode<Integer> mySecondNode = new MyNode(30);
+		MyNode<Integer> myThirdNode = new MyNode(70);
+		queue.enqueue(myFirstNode);
+		queue.enqueue(mySecondNode);
+		queue.enqueue(myThirdNode);
+		queue.printQueue();
+		queue.dequeue();
+		queue.printQueue();
+	}
+
 }

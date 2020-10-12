@@ -14,4 +14,8 @@ public class MyQueue {
 	public void printQueue() {
 		list.printNodes();
 	}
+
+	public void dequeue() {
+		list.pop();
+	}
 }
