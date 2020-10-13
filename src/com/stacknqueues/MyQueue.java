@@ -16,6 +16,9 @@ public class MyQueue {
 	}
 
 	public void dequeue() {
+		if (list.isEmpty()) {
+			System.out.println("The queue is empty");
+		}
 		list.pop();
 	}
 }

@@ -20,6 +20,9 @@ public class MyStack {
 	}
 
 	public INode pop() {
+		if (list.isEmpty()) {
+			System.out.println("The stack is Empty");
+		}
 		return list.pop();
 	}
 }

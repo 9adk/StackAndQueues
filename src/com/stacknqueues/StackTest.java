@@ -37,6 +37,10 @@ class StackTest {
 		stack.push(myThirdNode);
 		INode<Integer> pop = stack.pop();
 		stack.printStack();
+		INode<Integer> pop1 = stack.pop();
+		stack.printStack();
+		INode<Integer> pop3 = stack.pop();
+		stack.printStack();
 		assertEquals(pop, myThirdNode);
 
 	}
