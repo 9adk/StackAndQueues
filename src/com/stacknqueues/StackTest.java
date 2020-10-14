@@ -10,7 +10,7 @@ class StackTest {
 	 * Usecase1
 	 */
 	@Test
-	public void givenInputShouldAddToStack() {
+	public void givenStack_WhenReturnPeak_ShouldPassTheResult() {
 		MyStack stack = new MyStack();
 		MyNode<Integer> myFirstNode = new MyNode(70);
 		MyNode<Integer> mySecondNode = new MyNode(30);
@@ -27,7 +27,7 @@ class StackTest {
 	 * Usecase2
 	 */
 	@Test
-	public void givenMethodShouldMatchPoppedValueWithLastAddedNode() {
+	public void givenStack_WhenDeleteTopElement_ShouldPassTheResult() {
 		MyStack stack = new MyStack();
 		MyNode<Integer> myFirstNode = new MyNode(70);
 		MyNode<Integer> mySecondNode = new MyNode(30);

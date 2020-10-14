@@ -10,7 +10,7 @@ class QueueTest {
 	 * Usecase3
 	 */
 	@Test
-	public void givenInputShouldAddToQueue() {
+	public void given3Numbers_WhenAddedToQueue_ShouldBeAppendedAtRear() {
 		MyQueue queue = new MyQueue();
 		MyNode<Integer> myFirstNode = new MyNode(56);
 		MyNode<Integer> mySecondNode = new MyNode(30);
@@ -25,7 +25,7 @@ class QueueTest {
 	 * Usecase4
 	 */
 	@Test
-	public void givenMethodShouldRemoveFromQueue() {
+	public void givenQueue_WhenDequeued_ShouldRemovedValueFromFront() {
 		MyQueue queue = new MyQueue();
 		MyNode<Integer> myFirstNode = new MyNode(56);
 		MyNode<Integer> mySecondNode = new MyNode(30);
